@@ -9,7 +9,7 @@ const express = require('express')
 const app = express()
 const portNo = 3001
 app.listen(portNo, () => {
-  console.log('起動しました', 'http://localhost:${portNo}')
+  console.log('起動しました', `http://localhost:${portNo}`)
 })
 
 app.use('/public', express.static('./public'))
